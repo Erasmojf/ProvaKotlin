@@ -15,8 +15,6 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 class MainActivity : AppCompatActivity() {
     lateinit var recyclerViewAdapter : RecyclerViewAdapter
-//    private  lateinit var  recyclerViewAdapter: RecyclerViewAdapter
-//    private lateinit var viewModel: ViewModel
 
     override fun onCreate(savedInstanceState: Bundle?) {
 
@@ -51,29 +49,5 @@ class MainActivity : AppCompatActivity() {
                 println(t.message)
             }
         })
-//        initRecyclerView()
-//        initViewModel()
     }
-
-//    private  fun initRecyclerView(){
-//        recyclerview.layoutManager = LinearLayoutManager(this)
-//        recyclerViewAdapter = RecyclerViewAdapter()
-//        recyclerview.adapter = recyclerViewAdapter
-//    }
-
-//    private  fun  initViewModel(){
-//        viewModel = ViewModelProvider(this).get(ViewModel::class.java)
-//        viewModel.getLiveDataObserver().observe(this, object : Observer<RecyclerList>{
-//
-//            override fun onChanged(t: RecyclerList?) {
-//                if (t != null){
-//                    recyclerViewAdapter.setUpdatedData(t.items)
-//                    recyclerViewAdapter.notifyDataSetChanged()
-//                }else{
-//                    Toast.makeText(this@MainActivity, "Erro ao carregar dados ",Toast.LENGTH_SHORT).show()
-//                }
-//            }
-//        })
-//        viewModel.makeApicall()
-//    }
 }
